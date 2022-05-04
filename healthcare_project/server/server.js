@@ -26,9 +26,9 @@ app.set('view engine', 'hbs')
 }) **/
 
 const db = mysql.createConnection({
-  host     : "ouhk.ckuyjdzvmvaj.us-east-1.rds.amazonaws.com",
+  host     : "m",
   user     : "admin",
-  password : "harryli1",
+  password : " ",
   port     : "3306"
 });
 
