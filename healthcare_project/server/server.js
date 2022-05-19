@@ -26,10 +26,10 @@ app.set('view engine', 'hbs')
 }) **/
 // connect to aws RDS
 const db = mysql.createConnection({
-  host     : "m",
-  user     : "admin",
-  password : " ",
-  port     : "3306"
+  host    : process.env.RDS_HOSTNAME,
+  user     : process.env.RDS_USERNAME,
+  password : process.env.RDS_PASSWORD,
+  port     : process.env.RDS_PORT
 });
 
 db.connect(function(err) {
