@@ -24,7 +24,7 @@ app.set('view engine', 'hbs')
         console.log('MYSQL connected...')
     }
 }) **/
-
+// connect to aws RDS
 const db = mysql.createConnection({
   host     : "m",
   user     : "admin",
